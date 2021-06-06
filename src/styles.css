@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --white: #FFFFFF;
+  --gray: #E5E8E8;
+  --primary-background-color: #FFFFFF;
+  --secondary-background-color: #FFFFFF;
+  --primary-font-color: #000000;
+  --secondary-font-color: #000000;
+}
+
+html, body {
+  height: 100%;
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+[data-theme="dark"] {
+  --primary-background-color: #3F3F3F;
+  --primary-font-color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}

@@ -1,0 +1,36 @@
+
+.header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--primary-background-color);
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__right {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+  padding-right: 60px;
+  color: var(--primary-font-color);
+}
+
+.action-button {
+  cursor: pointer;
+}
+
+.main {
+  position: relative;
+  top: 150px;
+  bottom: 80px;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 650px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 40px 85px rgb(0 0 0 / 30%);
+  box-shadow: 0 40px 85px rgb(0 0 0 / 30%);
+}
