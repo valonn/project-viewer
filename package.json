@@ -11,7 +11,7 @@
     "extract": "ng xi18n --output-path=src/locale",
     "start:al": "npm start -- --configuration=al --port 4201",
     "build:i18n": "npm run build --prod --localize",
-    "heroku-postbuild": "ng build --prod --localize"
+    "heroku-postbuild": "ng build --configuration production --localize"
   },
   "private": true,
   "dependencies": {
