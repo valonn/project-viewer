@@ -3,15 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng server.js",
-    "build": "ng build --configuration production --localize",
+    "start": "ng serve",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "extract": "ng xi18n --output-path=src/locale",
-    "start:sq": "npm start --configuration=sq --port 4201",
-    "build:i18n": "npm run build --prod --localize",
-    "heroku-postbuild": "ng build --configuration production --localize && node server.js"
+    "start:sq": "ng serve --configuration=sq",
+    "build:i18n": "npm run build --prod --localize"
   },
   "private": true,
   "dependencies": {
