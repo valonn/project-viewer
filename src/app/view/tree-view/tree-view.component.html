@@ -1,0 +1,24 @@
+<div *ngIf="loading" class="loading">Loading...</div>
+<ul class="parent">
+  <li *ngFor="let node of treeNodes" class="node">
+    <div class="node__container">
+      <span (click)="toggleChildNodes(node)" *ngIf="!node.children || node.children?.length > 0"
+            class="material-icons node__container__arrow">{{node.isOpened ? 'expand_less' : 'expand_more'}}</span>
+      <div (click)="selectNode(node)" [ngClass]="{'node__container__title--active' : node.id === selectedNode?.id}"
+           class="node__container__title">
+        <span [ngClass]="{'node__container__icon--active' : node.id === selectedNode?.id}"
+              class="material-icons node__container__title__icon">{{icon}}</span>
+        {{node.name}}
+      </div>
+    </div>
+    <div [hidden]="!node.isOpened" class="node__children">
+      <app-tree-view (selectedNodeEvent)="selectNode($event)"
+                     *ngIf="node.children?.length > 0 || node.isOpened"
+                     [icon]="'folder'"
+                     [parenNode]="node"
+                     [selectedNode]="selectedNode"
+                     [sourceUrl]="sourceUrl"
+                     class="node__children"></app-tree-view>
+    </div>
+  </li>
+</ul>

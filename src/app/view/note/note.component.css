@@ -1,0 +1,17 @@
+
+.note {
+  width: 158px;
+  padding: 20px;
+  height: 178px;
+  font-size: 14px;
+  border: 1px solid var(--gray);
+}
+
+.note__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  padding: 20px;
+}

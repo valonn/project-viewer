@@ -1,0 +1,18 @@
+<div class="task">
+  <div class="task__top">
+    <span class="task__top__status-label">{{task?.status}}</span>
+    <div class="task__top__title">
+      {{task?.title}}
+    </div>
+  </div>
+  <div class="task__bottom">
+    <div class="task__bottom__reporter">
+      <p>Reporter</p>
+      <p>{{task?.reporter?.name}}</p>
+    </div>
+    <div class="task__bottom__assignee">
+      <p>Assignee</p>
+      <p>{{task?.assignee?.name}}</p>
+    </div>
+  </div>
+</div>

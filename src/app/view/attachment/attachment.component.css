@@ -1,0 +1,27 @@
+.attachment {
+  width: 198px;
+  height: 218px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--gray);
+}
+
+.attachment__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.attachment__top_icon {
+  font-size: 72px;
+}
+
+.attachment__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 10px 0;
+  border-top: 1px solid var(--gray);
+}

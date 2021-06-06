@@ -1,0 +1,19 @@
+
+<div class="project-list">
+  <div class="project-list__top-container" i18n>PROJECTS</div>
+  <div class="project-list__body">
+    <div class="project-list__body__tree">
+      <app-tree-view [sourceUrl]="'api/projects'" [icon]="'folder'" (selectedNodeEvent)="selectProject($event)"></app-tree-view>
+    </div>
+  </div>
+</div>
+
+<div class="project-content">
+  <div class="project-content__top-container">
+    <span (click)="selectedProjectContentType = 'all'">All</span>
+    <span (click)="selectedProjectContentType = 'task'">Tasks</span>
+    <span (click)="selectedProjectContentType = 'note'">Notes</span>
+    <span (click)="selectedProjectContentType = 'attachment'">Attachments</span>
+  </div>
+  <app-project-list-content *ngIf="selectedProject" [project]="selectedProject" [type]="selectedProjectContentType"></app-project-list-content>
+</div>

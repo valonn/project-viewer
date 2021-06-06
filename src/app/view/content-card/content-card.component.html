@@ -1,0 +1,11 @@
+<div class="content-item">
+  <ng-container *ngIf="content?.type === 'attachment'">
+    <app-attachment [attachment]="content"></app-attachment>
+  </ng-container>
+  <ng-container *ngIf="content?.type === 'note'">
+    <app-note [note]="content"></app-note>
+  </ng-container>
+  <ng-container *ngIf="content?.type === 'task'">
+    <app-task [task]="content"></app-task>
+  </ng-container>
+</div>
