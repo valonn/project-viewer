@@ -3,7 +3,7 @@
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="f0274af6c76ea3f99ceae371d3be887e4db4cf3a" datatype="html">
-        <source>PROJECTS</source>
+        <source>Projects</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/project-list/project-list.component.html</context>
           <context context-type="linenumber">3</context>
