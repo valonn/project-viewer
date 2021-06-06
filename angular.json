@@ -6,8 +6,12 @@
     "project-viewer": {
       "projectType": "application",
       "i18n": {
+        "sourceLocale": "en-US",
         "locales": {
-          "sq": "src/locale/messages.sq.xlf"
+          "sq": {
+            "baseHref": "",
+            "translation": "src/locale/messages.sq.xlf"
+          }
         }
       },
       "root": "",
@@ -17,6 +21,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
             "outputPath": "dist/project-viewer",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -63,9 +68,9 @@
               ]
             },
             "sq": {
-              "localize": [
-                "sq"
-              ]
+              "i18nFile": "src/locale/messages.sq.xlf",
+              "i18nLocale": "sq",
+              "outputPath": "dist/sq"
             }
           }
         },
