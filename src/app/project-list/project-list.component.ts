@@ -11,6 +11,25 @@ export class ProjectListComponent implements OnInit {
   selectedProject: any;
   selectedProjectContentType = 'all';
 
+  projectContentTypes = [
+    {
+      label: 'All',
+      value: 'all'
+    },
+    {
+      label: 'Tasks',
+      value: 'task'
+    },
+    {
+      label: 'Notes',
+      value: 'note'
+    },
+    {
+      label: 'Attachments',
+      value: 'attachment'
+    }
+  ];
+
   constructor() {
   }
 

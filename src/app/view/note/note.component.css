@@ -1,10 +1,11 @@
 
 .note {
-  width: 158px;
-  padding: 20px;
+  width: 178px;
+  padding: 30px 10px;
   height: 178px;
   font-size: 14px;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--border-color);
+  position: relative;
 }
 
 .note__text {

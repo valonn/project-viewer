@@ -1,9 +1,9 @@
 .task {
   width: 198px;
-  height: 218px;
+  height: 238px;
   font-size: 14px;
   flex-direction: column;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--border-color);
 }
 
 .task__top {
@@ -21,18 +21,18 @@
   padding: 60px 15px 20px 15px;
 }
 
-.task__top__status-label {
+.task__top__label {
   position: absolute;
   top: 10px;
   left: 10px;
   padding: 3px 10px;
   border-radius: 3px;
-  background: deepskyblue;
+  background: #229ac8;
   color: white;
 }
 
 .task__bottom {
-  border-top: 1px solid var(--gray);
+  border-top: 1px solid var(--border-color);
   display: inline-flex;
   align-items: center;
   width: 100%;
@@ -50,4 +50,8 @@
 
 .task__bottom p {
   margin: 0;
+}
+
+.task__bottom__reporter_title, .task__bottom__assignee_title {
+  font-weight: 500;
 }

@@ -8,7 +8,7 @@
 .project-list {
   min-width: 250px;
   height: 650px;
-  border-right: 1px solid var(--gray);
+  border-right: 1px solid var(--border-color);
   resize: horizontal;
   overflow: hidden;
 }
@@ -33,7 +33,7 @@
 .project-list__top-container, .project-content__top-container {
   height: 60px;
   display: flex;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 1px solid var(--border-color);
   padding-left: 40px;
 }
 
@@ -49,4 +49,14 @@
   cursor: pointer;;
   padding: 10px;
   margin: 0 30px;
+}
+
+.project-content__top-container--active-type {
+  color: var(--active-color);
+  border-bottom: 1px solid var(--active-color);
+}
+
+.project-content__bottom-container {
+  height: 589px;
+  background: var(--secondary-background-color);
 }

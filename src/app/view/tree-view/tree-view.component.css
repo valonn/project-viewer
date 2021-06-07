@@ -29,12 +29,12 @@ ul, li {
 }
 
 .node__container__title--active {
-  color: rgb(71, 145, 233) !important;
+  color: var(--active-color) !important;
   font-weight: 500;
 }
 
 .node__container__icon--active {
-  color: rgb(71, 145, 233) !important;
+  color: var(--active-color) !important;
 }
 
 .node__container__arrow {
@@ -43,5 +43,5 @@ ul, li {
 }
 
 .node__container__arrow:hover {
-  color: #EC7063;
+  color: var(--active-color);
 }

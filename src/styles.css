@@ -3,10 +3,20 @@
 :root {
   --white: #FFFFFF;
   --gray: #E5E8E8;
-  --primary-background-color: #FFFFFF;
-  --secondary-background-color: #FFFFFF;
-  --primary-font-color: #000000;
-  --secondary-font-color: #000000;
+  --background-color: #FFFFFF;
+  --secondary-background-color: #FBFCFC;
+  --body-background-color: #EEF1F6;
+  --primary-text-color: #566573;
+  --active-color: #5499C7;
+  --border-color: #E5E8E8;
+}
+
+[data-theme="dark"] {
+  --background-color: #3F3F3F;
+  --secondary-background-color: #353838;
+  --body-background-color: #282c33;
+  --primary-text-color: #FFFFFF;
+  --border-color: #312d2d78;
 }
 
 html, body {
@@ -17,13 +27,11 @@ html, body {
 }
 
 body {
-  background-color: var(--primary-background-color);
-  margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-[data-theme="dark"] {
-  --primary-background-color: #3F3F3F;
-  --primary-font-color: #FFFFFF;
+  background: var(--body-background-color);
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: var(--primary-text-color);
+  -webkit-font-smoothing: antialiased;
 }
 
 ::-webkit-scrollbar {

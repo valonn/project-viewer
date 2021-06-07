@@ -1,11 +1,14 @@
 <div class="content-item">
   <ng-container *ngIf="content?.type === 'attachment'">
+    <span class="content-item__label">Attachment</span>
     <app-attachment [attachment]="content"></app-attachment>
   </ng-container>
   <ng-container *ngIf="content?.type === 'note'">
+    <span class="content-item__label">Note</span>
     <app-note [note]="content"></app-note>
   </ng-container>
   <ng-container *ngIf="content?.type === 'task'">
+    <span class="content-item__label">Task</span>
     <app-task [task]="content"></app-task>
   </ng-container>
 </div>

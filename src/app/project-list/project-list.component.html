@@ -10,10 +10,11 @@
 
 <div class="project-content">
   <div class="project-content__top-container">
-    <span (click)="selectedProjectContentType = 'all'">All</span>
-    <span (click)="selectedProjectContentType = 'task'">Tasks</span>
-    <span (click)="selectedProjectContentType = 'note'">Notes</span>
-    <span (click)="selectedProjectContentType = 'attachment'">Attachments</span>
+    <span *ngFor="let type of projectContentTypes"
+          [ngClass]="{'project-content__top-container--active-type': selectedProjectContentType === type.value}"
+          (click)="selectedProjectContentType = type.value">{{type.label}}</span>
   </div>
-  <app-project-list-content *ngIf="selectedProject" [project]="selectedProject" [type]="selectedProjectContentType"></app-project-list-content>
+  <div class="project-content__bottom-container">
+    <app-project-list-content *ngIf="selectedProject" [project]="selectedProject" [type]="selectedProjectContentType"></app-project-list-content>
+  </div>
 </div>

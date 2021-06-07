@@ -1,15 +1,17 @@
 .attachment {
   width: 198px;
-  height: 218px;
+  height: 238px;
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--border-color);
 }
 
 .attachment__top {
   display: flex;
+  height: 70%;
   align-items: center;
   justify-content: center;
+  position: relative;
   padding: 50px 0;
 }
 
@@ -18,10 +20,11 @@
 }
 
 .attachment__title {
+  height: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
   padding: 10px 0;
-  border-top: 1px solid var(--gray);
+  border-top: 1px solid var(--border-color);
 }

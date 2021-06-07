@@ -41,32 +41,32 @@ export class InMemoryDataService implements InMemoryDbService {
       },
       {
         id: 'd048ee2c-9a15-491f-8ade-b69ac5c2a014',
-        name: 'Project A2',
+        name: 'Project B',
         parentId: null
       },
       {
         id: '48a2af4f-d777-4a10-a770-b4c4dad19edf',
-        name: 'Project A2.1',
+        name: 'Project B.1',
         parentId: 'd048ee2c-9a15-491f-8ade-b69ac5c2a014'
       },
       {
         id: 'a1f8b21d-e05c-4f9e-8201-bb20edb46331',
-        name: 'Project A2.1.1',
+        name: 'Project B.1.1',
         parentId: '48a2af4f-d777-4a10-a770-b4c4dad19edf'
       },
       {
         id: 'c21f0961-cb93-43ae-9065-42faef760747',
-        name: 'Project A2.1.2',
+        name: 'Project B.1.2',
         parentId: '48a2af4f-d777-4a10-a770-b4c4dad19edf'
       },
       {
         id: '1db8925e-adff-4d63-b5f5-b4c7930ee34d',
-        name: 'Project A2.1.3',
+        name: 'Project B.1.3',
         parentId: '48a2af4f-d777-4a10-a770-b4c4dad19edf'
       },
       {
         id: 'ec692212-8389-4564-b078-e004df1222f6',
-        name: 'Project A2.2',
+        name: 'Project B.2',
         parentId: 'd048ee2c-9a15-491f-8ade-b69ac5c2a014'
       },
     ];
