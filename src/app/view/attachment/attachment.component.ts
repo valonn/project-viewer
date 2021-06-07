@@ -1,4 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Content} from '@angular/compiler/src/render3/r3_ast';
+import {Attachment} from '../../model/attachment.model';
 
 @Component({
   selector: 'app-attachment',
@@ -7,7 +9,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class AttachmentComponent implements OnInit {
 
-  @Input() attachment;
+  @Input() attachment: Attachment;
 
   constructor() { }
 

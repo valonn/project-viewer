@@ -1,5 +1,6 @@
 import {InMemoryDbService} from 'angular-in-memory-web-api';
 import {Project} from '../model/project.model';
+import {ProjectContent} from '../model/project-content.model';
 
 export class InMemoryDataService implements InMemoryDbService {
   createDb(): any {
@@ -70,7 +71,7 @@ export class InMemoryDataService implements InMemoryDbService {
         parentId: 'd048ee2c-9a15-491f-8ade-b69ac5c2a014'
       },
     ];
-    const projectContent = [
+    const projectContent: ProjectContent[] = [
       {
         type: 'task',
         title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
@@ -172,6 +173,6 @@ export class InMemoryDataService implements InMemoryDbService {
         projectId: 'd048ee2c-9a15-491f-8ade-b69ac5c2a014'
       },
     ];
-    return {projects, project_content: projectContent};
+    return {projects, 'project-content': projectContent};
   }
 }

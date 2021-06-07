@@ -1,9 +1,5 @@
-<div class="header">
-  <div class="header__right">
-    <span (click)="toggleTheme()" class="material-icons action-button">{{theme}}</span>
-    <span class="material-icons action-button">language</span>
-  </div>
-</div>
+<app-header-navbar></app-header-navbar>
+
 <div class="main">
-  <app-project-list></app-project-list>
+  <router-outlet></router-outlet>
 </div>

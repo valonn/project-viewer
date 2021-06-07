@@ -1,0 +1,38 @@
+
+.header {
+  height: 50px;
+  z-index: 100;
+  border-bottom: 1px solid var(--border-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #79589F;
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__left {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.header__left a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.header__right {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+  padding-right: 60px;
+}
+
+.action-button {
+  cursor: pointer;
+}

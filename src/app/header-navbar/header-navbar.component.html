@@ -1,0 +1,14 @@
+
+<div class="header">
+  <div class="header__left">
+    <a [routerLink]="['']">Home</a>
+  </div>
+  <div class="header__right">
+    <span (click)="toggleTheme()" class="material-icons action-button">{{theme}}</span>
+    <span [matMenuTriggerFor]="languageMenu" class="material-icons action-button">language</span>
+    <mat-menu #languageMenu="matMenu">
+      <button mat-menu-item (click)="changeLanguage('en')">En</button>
+      <button mat-menu-item (click)="changeLanguage('sq')">Sq</button>
+    </mat-menu>
+  </div>
+</div>

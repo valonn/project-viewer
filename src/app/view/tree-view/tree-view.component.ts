@@ -1,8 +1,7 @@
-import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {TreeNode} from '../../model/tree-node.model';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {Project} from '../../model/project.model';
 
 @Component({
   selector: 'app-tree-view',
@@ -34,15 +33,27 @@ export class TreeViewComponent implements OnInit {
     });
   }
 
+  /**
+   * Selects a node and emits that value
+   * @param node - tree node
+   */
   selectNode(node: TreeNode<any>): void {
     this.selectedNode = node;
     this.selectedNodeEvent.emit(node);
   }
 
+  /**
+   * Toggles child nodes
+   * @param node - tree node
+   */
   toggleChildNodes(node: TreeNode<any>): void {
     node.isOpened = !node.isOpened;
   }
 
+  /**
+   * Gets all tree nodes by parent id, if parent id is not given then fetches root nodes
+   * @param parentId - parent id
+   */
   getTreeNodes(parentId?: string): Observable<any[]> {
     const url = `${this.sourceUrl}?parentId=${parentId ? parentId : 'null'}`;
     return this.http.get<any[]>(url);

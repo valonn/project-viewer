@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {ProjectContent} from '../../model/project-content.model';
 
 @Component({
   selector: 'app-content-card',
@@ -7,7 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ContentCardComponent implements OnInit {
 
-  @Input() content: any;
+  @Input() content: ProjectContent;
 
   constructor() { }
 
